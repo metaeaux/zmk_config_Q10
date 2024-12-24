@@ -169,11 +169,6 @@ ZMK_MOD_MORPH(nav_spc_tab,
      bindings = <&ltt NAV SPACE>, <&kp TAB>;
      mods = <(MOD_LSFT)>; // left hand only
 )
-ZMK_MOD_MORPH(altnav_ret_stab, // unused
-     bindings = <&ltt ALTNAV RET>, <&kp TAB>;
-     mods = <(MOD_LSFT)>;
-     keep-mods = <(MOD_LSFT)>;
-)
 ZMK_MOD_MORPH(dot_excl,
      bindings = <SH(DOT)>, <DBLE(EXCL)>;
      mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -261,7 +256,11 @@ ZMK_COMBO(combo_num, &number_word NUM, 12 17, ALL)
 ZMK_COMBO(combo_func, &func_word FUNC, 11 18, ALL)
 ZMK_COMBO(combo_wezterm, &kp LC(B), 10 19, ALL)
 
-ZMK_COMBO(combo_sys, &sl SYS, 30 34, ALL)
+ZMK_COMBO(combo_left_ret, &kp RET, 13 32, ALL)
+ZMK_COMBO(combo_left_wezterm, &kp LC(B), 12 31, ALL)
+ZMK_COMBO(combo_left_sys, &sl SYS, 10 30, ALL)
+
+ZMK_COMBO(combo_right_sys, &sl SYS, 19 35, ALL)
 
 // FN & NUM LAYER
 ZMK_COMBO(combo_left_abkt, ABKT, 16 19, NUM FUNC)
