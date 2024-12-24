@@ -16,11 +16,17 @@ manifest:
       url-base: https://github.com/badjeff
     - name: dhruvinsh
       url-base: https://github.com/dhruvinsh
+    - name: zmk_zitao
+      url-base: https://github.com/ZitaoTech
   projects:
-    - name: zmk
-      remote: urob
-      revision: going-modular
+    - name: zmk_zitao
+      remote: ZitaoTech
+      revision: bbkeyboard_tp
       import: app/west.yml
+    # - name: zmk
+    #   remote: urob
+    #   revision: going-modular
+    #   import: app/west.yml
     - name: zmk-helpers
       remote: urob
       revision: main
