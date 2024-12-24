@@ -256,11 +256,7 @@ ZMK_COMBO(combo_num, &number_word NUM, 12 17, ALL)
 ZMK_COMBO(combo_func, &func_word FUNC, 11 18, ALL)
 ZMK_COMBO(combo_wezterm, &kp LC(B), 10 19, ALL)
 
-ZMK_COMBO(combo_left_ret, &kp RET, 13 32, ALL)
-ZMK_COMBO(combo_left_wezterm, &kp LC(B), 12 31, ALL)
-ZMK_COMBO(combo_left_sys, &sl SYS, 10 30, ALL)
-
-ZMK_COMBO(combo_right_sys, &sl SYS, 19 35, ALL)
+ZMK_COMBO(combo_sys, &sl SYS, 30 34, ALL)
 
 // FN & NUM LAYER
 ZMK_COMBO(combo_left_abkt, ABKT, 16 19, NUM FUNC)
@@ -279,8 +275,8 @@ ZMK_COMBO(combo_left_brc,  BRC, 11 12, NUM FUNC)
 //
 // LAYERS
 ZMK_LAYER(home,
-                 &mkp LCLK                             &mkp RCLK
-                 &kp CLCK     &kp LGUI        &mkp LCLK      &mt ESC K_BACK    &kp TAB
+                 &bootloader                            &sys_reset
+                 &kp CLCK     &kp LGUI        &mkp LCLK      &kp ESC    &kp TAB
 		 SH(Q) SH(W) SH(F) SH(P) SH(B)         SH(J) SH(L) SH(U) SH(Y) &quote
              HLP(A) HLR(R) HLM(S) HLI(T) SH(G)         SH(M) HRI(N) HRM(E) HRR(I) HRP(O)
 		 SH(Z) SH(X) SH(C) SH(D) SH(V)         SH(K) SH(H)  &comma_semicolon &dot_excl SH(FSLH)
